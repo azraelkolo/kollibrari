@@ -8,7 +8,7 @@ def install(package):
         check_call([sys.executable, '-m', 'pip', 'install', package])
 
     execl(sys.executable, sys.executable, *sys.argv)
-
+#snek
 try:
     import cpuinfo
 except ModuleNotFoundError:
