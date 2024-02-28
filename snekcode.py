@@ -26,3 +26,11 @@ except ModuleNotFoundError:
           + "If it fails, please manually execute " 
           + "python3 -m pip install psutil")    
     install("psutil"
+try:
+    from pypresence import Presence
+except ModuleNotFoundError:
+    print("Pypresence is not installed. "
+          + "Miner will try to automatically install it "
+          + "If it fails, please manually execute "
+          + "python3 -m pip install pypresence")
+    install("pypresence")
